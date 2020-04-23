@@ -30,7 +30,7 @@ Plot the computational graph.
 
 <img src="graph.png" width="400px">
 
-# Repo Structure
+## Repo Structure
 
 1. [`demo.ipynb`](demo.ipynb): Demo notebook of MiniGrad's functionality
 1. [`tests.ipynb`](tests.ipynb): Test notebook to verify gradients against [PyTorch](https://pytorch.org/) and [JAX](https://github.com/google/jax). Install both to run tests.
