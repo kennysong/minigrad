@@ -28,6 +28,10 @@ d.backward()
 
 Plot the computational graph.
 
+```python
+draw_graph(d)
+```
+
 <img src="graph.png" width="400px">
 
 ## Repo Structure
@@ -54,6 +58,8 @@ This is called [reverse-mode automatic differentiation](https://en.wikipedia.org
 (Forward-mode automatic differentiation also exists, and has the opposite advantage.)
 
 ## Not in Scope
+
+This project is just for fun, so the following are not planned:
 
 * Vectorization
 * Forward-mode automatic differentiation
