@@ -4,7 +4,7 @@ A minimal implementation of reverse-mode automatic differentiation (a.k.a. autog
 
 Inspired by Andrej Karpathy's [micrograd](https://github.com/karpathy/micrograd), but with more comments and less cleverness. Thanks for the wonderful reference implementation and tests!
 
-# Overview
+## Overview
 
 Create a `Scalar`.
 
@@ -28,7 +28,7 @@ d.backward()
 
 Plot the computational graph.
 
-![Image of computational graph](graph.png)
+<img src="graph.png" width="400px">
 
 # Repo Structure
 
@@ -37,7 +37,7 @@ Plot the computational graph.
 1. [`minigrad/minigrad.py`](minigrad/minigrad.py): The entire autograd logic in one (~100 loc) numeric class. See section below for details
 1. [`minigrad/visualize.py`](minigrad/visualize.py): This just draws nice-looking computational graphs. Install `graphviz` to run it.
 
-# Implementation
+## Implementation
 
 MiniGrad is implemented in one small (~100 loc) Python class, using no external modules. 
 
@@ -53,7 +53,7 @@ This is called [reverse-mode automatic differentiation](https://en.wikipedia.org
 
 (Forward-mode automatic differentiation also exists, and has the opposite advantage.)
 
-# Not in Scope
+## Not in Scope
 
 * Vectorization
 * Forward-mode automatic differentiation
