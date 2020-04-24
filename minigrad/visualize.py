@@ -42,7 +42,7 @@ def draw_graph(node):
             _draw_parents(parent)
    
     dot = Digraph(graph_attr={'rankdir': 'BT'}, node_attr={'shape': 'plaintext'})
-    _draw_node(node)                             # Draw the root / output      
-    _draw_parents(node)                          # Draw the rest of the graph
+    _draw_node(node)     # Draw the root / output      
+    _draw_parents(node)  # Draw the rest of the graph
     
     return dot
