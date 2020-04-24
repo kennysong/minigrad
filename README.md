@@ -62,5 +62,6 @@ This is called [reverse-mode automatic differentiation](https://en.wikipedia.org
 This project is just for fun, so the following are not planned:
 
 * Vectorization
+* Higher order derivatives (i.e. `Scalar.grad` is a `Scalar` itself)
 * Forward-mode automatic differentiation
 * Neural network library on top of MiniGrad
