@@ -35,7 +35,7 @@ class Scalar:
         return output
     
     # Called by: other - self
-    def __rsub__(self, other):  # other - self calls this
+    def __rsub__(self, other):
         if not isinstance(other, Scalar): other = Scalar(other)
         output = Scalar(other.value - self.value, [self, other], '-')
         
