@@ -40,6 +40,7 @@ draw_graph(d)
 1. [`tests.ipynb`](tests.ipynb): Test notebook to verify gradients against [PyTorch](https://pytorch.org/) and [JAX](https://github.com/google/jax). Install both to run tests.
 1. [`minigrad/minigrad.py`](minigrad/minigrad.py): The entire autograd logic in one (~100 loc) numeric class. See section below for details.
 1. [`minigrad/visualize.py`](minigrad/visualize.py): This just draws nice-looking computational graphs. Install `graphviz` to run it.
+1. [`requirements.txt`](requirements.txt): MiniGrad requires no external modules to run. This file just sets up my dev environment.
 
 ## Implementation
 
