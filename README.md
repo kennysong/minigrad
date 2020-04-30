@@ -1,6 +1,6 @@
 # MiniGrad
 
-A minimal implementation of reverse-mode automatic differentiation (a.k.a. autograd) in pure Python.
+A minimal implementation of reverse-mode automatic differentiation (a.k.a. autograd / backpropagation) in pure Python.
 
 Inspired by Andrej Karpathy's [micrograd](https://github.com/karpathy/micrograd), but with more comments and less cleverness. Thanks for the wonderful reference implementation and tests!
 
