@@ -48,13 +48,13 @@ MiniGrad is implemented in one small (~100 loc) Python class, using no external 
 
 The entirety of the auto-differentiation logic lives in the `Scalar` class in [`minigrad.py`](minigrad/minigrad.py). 
 
-A `Scalar` wraps a float/int and overrides its [arthimetic magic methods](https://docs.python.org/3/reference/datamodel.html#emulating-numeric-types) in order to:
+A `Scalar` wraps a float/int and overrides its [arithmetic magic methods](https://docs.python.org/3/reference/datamodel.html#emulating-numeric-types) in order to:
 1. Stitch together a define-by-run computational graph when doing arithmetic operations on a `Scalar`
 1. Hard code the derivative functions of arithmetic operations
 1. Keep track of `∂self/∂parent` between adjacent nodes
 1. Compute `∂output/∂self` with the chain rule on demand (when `.backward()` is called)
 
-This is called [reverse-mode automatic differentiation](https://en.wikipedia.org/wiki/Automatic_differentiation#Reverse_accumulation). It's great when you have few outputs and many inputs, since it computes all derivatives of one output in one pass. This is also how TensorFlow and PyTorch traditionally compute gradients.
+This is called [reverse-mode automatic differentiation](https://en.wikipedia.org/wiki/Automatic_differentiation#Reverse_accumulation). It's great when you have few outputs and many inputs, since it computes all derivatives of one output in one pass. This is also how TensorFlow and PyTorch normally compute gradients.
 
 (Forward-mode automatic differentiation also exists, and has the opposite advantage.)
 
