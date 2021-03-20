@@ -20,7 +20,7 @@ ipywidgets==7.5.1
 jax==0.1.64
 jaxlib==0.1.45
 jedi==0.17.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 joblib==0.14.1
 json5==0.9.4
 jsonschema==3.2.0
